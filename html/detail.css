@@ -1,0 +1,147 @@
+body{
+    background-color: white;
+    margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 962px) {
+    .content{
+        max-width: 962px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+#pokemon{
+    width: auto;
+    height: auto;
+    background-color: gray;
+    margin: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    display: grid;  
+}
+
+@media screen and (min-width: 380px) {
+    #pokemon{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #pokemon{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 962px) {
+    #pokemon{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.loadVoltar{
+    padding: 1rem 1rem 0rem 1rem;
+    margin: 0;
+}
+.loadVoltar button{
+    background-color: gray;
+    filter: brightness(1.1);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.name{
+    color: white;
+    padding: 0rem 1rem 0rem 1rem;
+    margin: 1rem 0 0 0;
+    text-transform: capitalize;
+    
+}
+.number{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0rem 1rem 0rem 1rem;
+    color: white;
+}
+
+.types{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: block;
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.types .type{
+    margin: 0 0.5rem 0 0.5rem;
+    color: white;
+    background-color: gray;
+    filter: brightness(1.1);
+    border-radius: 1rem;
+    width: 3rem;
+    text-align: center; 
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 0 1rem;
+}
+
+.details img{
+    align-self: center;
+    height: 150px;
+    width: 150px;
+    margin-top: 1rem;
+}
+
+.moreDetails{
+    background-color: white;
+    text-transform: capitalize;
+    margin: 1rem 1rem 0.5rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    list-style: none;
+}
+
+.detail{
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.detail li{
+    margin: 0 0 0.5rem 0;
+}
+
+.titulo{
+    padding: 0 0 1rem 0;
+    font-weight: bold;
+    font-size: large;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+.pagination button{
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    padding: .25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem 0;
+}
+
